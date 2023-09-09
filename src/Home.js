@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 
 
-function App() {
+function Home() {
   return <div>
     <header>
       <Navbar/>
@@ -16,4 +16,4 @@ function App() {
  
 }
 
-export default App;
+export default Home;
