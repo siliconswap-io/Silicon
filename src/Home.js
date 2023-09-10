@@ -1,5 +1,7 @@
-import './App.css';
+import './styles/Home.css'
 import Navbar from './components/Navbar';
+import TopContainer from './components/Top-container';
+import FeaturesContainer from './components/features-container';
 
 
 function Home() {
@@ -9,7 +11,8 @@ function Home() {
 
     </header>
     <main>
-      
+      <TopContainer/>
+      <FeaturesContainer/>
     </main>
 
   </div> 
