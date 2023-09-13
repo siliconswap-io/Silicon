@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../homepage_styles/ExclusiveContainer.css'
+
 /* ////// IMAGES ////// */
 import IdoLogo from "../assets/images/Ido-logo.png";
 import IdoCoin from "../assets/images/coin.png";
@@ -17,7 +19,7 @@ const HomeExclusiveContainer = () => {
   return (
     <div className='exclusive-container'>
       <div>
-        <div>
+        <div className='title-flex'> 
           <Sections section="EXCLUSIVE" />
           <Line />
         </div>
