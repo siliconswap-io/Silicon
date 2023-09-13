@@ -1,5 +1,7 @@
 import React from "react";
 
+import '../styles/Style.css';
+
 import TOpImage from "../assets/images/top-image.png"
 import Rocket from "../assets/images/rocket.png"
 import LaunchappIcon from "../assets/icons/launchapp-icon.png";
@@ -8,7 +10,7 @@ import LaunchappIcon from "../assets/icons/launchapp-icon.png";
 
 function HomeTopContainer() {
     return <div className="top-container">
-        <h1>Trade Crypto Securely withSiliconSwap - The Pioneer DEX for DeFi</h1>
+        <h1>Trade Crypto Securely with SiliconSwap - The Pioneer DEX for DeFi</h1>
         <div className="top-flex">
             <div className="top-text-container">
                 <h4>Experience DeFi's Future at SiliconSwap - The Decentralized 
@@ -20,12 +22,12 @@ function HomeTopContainer() {
                     Embrace the future of finance with our user-friendly  interface, 
                     lightning-fast transactions and unmatched liquidity.
                 </p>
-                <button className="lauchapp-btn">
+                <button className="launchapp-btn">
                     <img src={LaunchappIcon} />
                     Launch dApp
                 </button>
             </div>
-            <img src={Rocket} />
+            <img src={Rocket} className="rocket-icon" />
             <img src={TOpImage} />
 
         </div>

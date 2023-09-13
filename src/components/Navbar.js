@@ -1,11 +1,13 @@
 import React from 'react';
 
+import '../styles/Style.css'
+
 import logo from '../assets/images/sslog_a 1.png';
 import searchIcon from '../assets/icons/search-icon.png';
 import walletIcon from '../assets/icons/wallet-icon.png';
 import NabarTags from './NabarTags'
 
-import '../styles/Navbar.css'
+
 
 
 function Navbar() {
