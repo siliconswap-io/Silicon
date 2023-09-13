@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "../homepage_styles/FeaturesContainer.css"
+
 /* ////// IMAGES ////// */
 import StakingImg from "../assets/images/staking-img.png";
 import YieldImg from "../assets/images/yield-img.png";
@@ -14,15 +16,15 @@ import FeaturesCard from './FeaturesCard';
 
 function HomeFeaturesContainer() {
     return <div className='features-container'>
-        <div >
-            <div>
-                <Sections section="FEATURES" />
+        <div className='title'>
+            <div className='title-flex'>
                 <Line/>
+                <Sections section="FEATURES" />
             </div>
             <SubSections SubSection="What we offer"  />
         </div>
         <div className='features-flex'>
-            <div className='staking'>
+            <div className='staking div'>
                 <img src={StakingImg} />
                 <FeaturesCard cardTitle="Staking" 
                     cardContent="Silicon Swap enables you to participate in the network's consensus
@@ -34,7 +36,7 @@ function HomeFeaturesContainer() {
                     btnText="Stake Now"
                 />
             </div>
-            <div className='yield'>
+            <div className='yield div'>
                 <img src={YieldImg} />
                 <FeaturesCard cardTitle="Yield Farms" 
                     cardContent="Silicon Swap allows you to become a liquidity provider, 
@@ -46,7 +48,7 @@ function HomeFeaturesContainer() {
                     btnText="Farm"
                 />
             </div>
-            <div className='lending'>
+            <div className='lending div'>
                 <img src={LendingImg} />
                 <FeaturesCard cardTitle="Lending & Borrowing" 
                     cardContent="Silicon Swap empowers you with the ability to lend and borrow digital assets. 

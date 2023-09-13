@@ -1,5 +1,7 @@
 import React from 'react'
 
+import "../homepage_styles/FeaturesContainer.css"
+
 const FeaturesCard = (props) => {
 
     const {cardTitle, cardContent, btnText} = props;

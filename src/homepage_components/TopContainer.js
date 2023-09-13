@@ -22,10 +22,13 @@ function TopContainer() {
                     Embrace the future of finance with our user-friendly  interface, 
                     lightning-fast transactions and unmatched liquidity.
                 </p>
-                <button className="launchapp-btn">
-                    <img src={LaunchappIcon} />
-                    Launch dApp
-                </button>
+                <a href="">
+                    <button className="launchapp-btn">
+                        <img src={LaunchappIcon} />
+                        Launch dApp
+                    </button>
+                </a>
+                
             </div>
             <img src={Rocket} className="rocket-icon" />
             <img src={TOpImage} className="top-image" />
