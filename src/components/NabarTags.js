@@ -1,6 +1,6 @@
 import React from "react";
 
-function AnchorTags(props) {
+function NavbarTags(props) {
   const { tags } = props;
 
   return (
@@ -10,4 +10,4 @@ function AnchorTags(props) {
   );
 }
 
-export default AnchorTags;
+export default NavbarTags;

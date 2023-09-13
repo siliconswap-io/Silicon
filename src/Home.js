@@ -1,9 +1,10 @@
 /* ////// PAGES ////// */
 import './styles/Home.css'
 import Navbar from './components/Navbar';
-import TopContainer from './components/Top-container';
-import FeaturesContainer from './components/Home-features-container';
-import HowItWorksContainer from './components/Home-how-it-works-container';
+import HomeTopContainer from './components/HomeTopContainer';
+import FeaturesContainer from './components/HomeFeaturesContainer';
+import HowItWorksContainer from './components/HomeHowItWorksContainer';
+import ExclusiveContainer from './components/HomExclusiveContainer';
 
 function Home() {
   return <div>
@@ -12,9 +13,11 @@ function Home() {
 
     </header>
     <main>
-      <TopContainer/>
+      <HomeTopContainer/>
       <FeaturesContainer/>
       <HowItWorksContainer/>
+      <ExclusiveContainer />
+
     </main>
 
   </div> 

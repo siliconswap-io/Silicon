@@ -6,25 +6,25 @@ import YieldImg from "../assets/images/yield-img.png";
 import LendingImg from "../assets/images/lending-img.png";
 
 /* ////// PAGES ////// */
-import Sections from './Home-section';
-import SubSections from './Home-sub-sections';
-import Line from './Home-lines';
-import FeaturesCard from './Features-card';
+import HomeSections from './HomeSection';
+import HomeSubSections from './HomeSubSections';
+import HomeLine from './HomeLine';
+import HomeFeaturesCard from './HomeFeaturesCard';
 
 
-function FeaturesContainer() {
+function HomeFeaturesContainer() {
     return <div className='features-container'>
-        <div className='section-title'>
-            <div className='title-flex'>
-                <Line/>
-                <Sections section="FEATURES" />
+        <div >
+            <div>
+                <HomeSections section="FEATURES" />
+                <HomeLine/>
             </div>
-            <SubSections SubSection="What we offer"  />
+            <HomeSubSections SubSection="What we offer"  />
         </div>
         <div className='features-flex'>
             <div className='staking'>
                 <img src={StakingImg} />
-                <FeaturesCard cardTitle="Staking" 
+                <HomeFeaturesCard cardTitle="Staking" 
                     cardContent="Silicon Swap enables you to participate in the network's consensus
                      mechanism and earn rewards in return. By staking your tokens, 
                      you actively contribute to the security and decentralization 
@@ -36,7 +36,7 @@ function FeaturesContainer() {
             </div>
             <div className='yield'>
                 <img src={YieldImg} />
-                <FeaturesCard cardTitle="Yield Farms" 
+                <HomeFeaturesCard cardTitle="Yield Farms" 
                     cardContent="Silicon Swap allows you to become a liquidity provider, 
                     offering your digital assets to various liquidity pools. As a provider, 
                     you will receive attractive yields as a reward for contributing to the 
@@ -48,7 +48,7 @@ function FeaturesContainer() {
             </div>
             <div className='lending'>
                 <img src={LendingImg} />
-                <FeaturesCard cardTitle="Lending & Borrowing" 
+                <HomeFeaturesCard cardTitle="Lending & Borrowing" 
                     cardContent="Silicon Swap empowers you with the ability to lend and borrow digital assets. 
                     As a lender, you can earn interest on your idle tokens, 
                     while borrowers gain access to much needed liquidity without the cumbersome 
@@ -65,4 +65,4 @@ function FeaturesContainer() {
 }
 
 
-export default FeaturesContainer;
+export default HomeFeaturesContainer;
