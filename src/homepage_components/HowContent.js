@@ -1,6 +1,8 @@
 import React from 'react'
 
-const HomeHowContent = (props) => {
+import '../homepage_styles/HowItWorksContainer.css'
+
+const HowContent = (props) => {
     const {howH4, howP} = props;
   return (
     <div className='how-content'>
@@ -10,4 +12,4 @@ const HomeHowContent = (props) => {
   )
 }
 
-export default HomeHowContent;
+export default HowContent;
