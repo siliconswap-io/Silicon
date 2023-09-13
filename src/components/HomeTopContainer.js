@@ -6,7 +6,7 @@ import LaunchappIcon from "../assets/icons/launchapp-icon.png";
 
 
 
-function TopContainer() {
+function HomeTopContainer() {
     return <div className="top-container">
         <h1>Trade Crypto Securely withSiliconSwap - The Pioneer DEX for DeFi</h1>
         <div className="top-flex">
@@ -33,4 +33,4 @@ function TopContainer() {
     
 }
 
-export default TopContainer;
+export default HomeTopContainer;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HowContent = (props) => {
+const HomeHowContent = (props) => {
     const {howH4, howP} = props;
   return (
     <div className='how-content'>
@@ -10,4 +10,4 @@ const HowContent = (props) => {
   )
 }
 
-export default HowContent;
+export default HomeHowContent;

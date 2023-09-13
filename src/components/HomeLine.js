@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Line = () => {
+const HomeLine = () => {
   return (
     <div className='line'></div>
   )
 }
 
-export default Line
+export default HomeLine
