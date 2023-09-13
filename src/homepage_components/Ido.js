@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const HomeIdo = (props) => {
+const Ido = (props) => {
     const {Logo, Name, Price, Coin, Hour, X, Ath } = props;
     
     return (
@@ -20,4 +20,4 @@ const HomeIdo = (props) => {
   )
 }
 
-export default HomeIdo;
+export default Ido;

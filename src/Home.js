@@ -1,10 +1,11 @@
 /* ////// PAGES ////// */
-import './styles/Home.css'
-import Navbar from './components/Navbar';
-import HomeTopContainer from './components/HomeTopContainer';
-import FeaturesContainer from './components/HomeFeaturesContainer';
-import HowItWorksContainer from './components/HomeHowItWorksContainer';
-import ExclusiveContainer from './components/HomExclusiveContainer';
+// import './styles/Home.css'
+
+import Navbar from './homepage_components/Navbar';
+import TopContainer from './homepage_components/TopContainer';
+import FeaturesContainer from './homepage_components/FeaturesContainer';
+import HowItWorksContainer from './homepage_components/HowItWorksContainer';
+import ExclusiveContainer from './homepage_components/ExclusiveContainer';
 
 function Home() {
   return <div>
@@ -13,7 +14,7 @@ function Home() {
 
     </header>
     <main>
-      <HomeTopContainer/>
+      <TopContainer/>
       <FeaturesContainer/>
       <HowItWorksContainer/>
       <ExclusiveContainer />

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HomeFeaturesCard = (props) => {
+const FeaturesCard = (props) => {
 
     const {cardTitle, cardContent, btnText} = props;
 
@@ -14,4 +14,4 @@ const HomeFeaturesCard = (props) => {
   )
 }
 
-export default HomeFeaturesCard
+export default FeaturesCard

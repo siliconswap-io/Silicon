@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/Style.css'
+import '../homepage_styles/Navbar.css'
 
 import logo from '../assets/images/sslog_a 1.png';
 import searchIcon from '../assets/icons/search-icon.png';

@@ -1,6 +1,6 @@
 import React from "react";
 
-import '../styles/Style.css';
+import '../homepage_styles/TopContainer.css';
 
 import TOpImage from "../assets/images/top-image.png"
 import Rocket from "../assets/images/rocket.png"
@@ -8,7 +8,7 @@ import LaunchappIcon from "../assets/icons/launchapp-icon.png";
 
 
 
-function HomeTopContainer() {
+function TopContainer() {
     return <div className="top-container">
         <h1>Trade Crypto Securely with SiliconSwap - The Pioneer DEX for DeFi</h1>
         <div className="top-flex">
@@ -28,11 +28,11 @@ function HomeTopContainer() {
                 </button>
             </div>
             <img src={Rocket} className="rocket-icon" />
-            <img src={TOpImage} />
+            <img src={TOpImage} className="top-image" />
 
         </div>
     </div>
     
 }
 
-export default HomeTopContainer;
+export default TopContainer;
