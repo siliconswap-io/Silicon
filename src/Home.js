@@ -6,6 +6,8 @@ import TopContainer from './homepage_components/TopContainer';
 import FeaturesContainer from './homepage_components/FeaturesContainer';
 import HowItWorksContainer from './homepage_components/HowItWorksContainer';
 import ExclusiveContainer from './homepage_components/ExclusiveContainer';
+import IdoStakeContainer from './homepage_components/IdoStakeContainer';
+import ProjectContainer from './homepage_components/ProjectContainer';
 
 function Home() {
   return <div>
@@ -17,7 +19,9 @@ function Home() {
       <TopContainer/>
       <FeaturesContainer/>
       <HowItWorksContainer/>
-      <ExclusiveContainer />
+      <ExclusiveContainer/>
+      <IdoStakeContainer/>
+      <ProjectContainer/>
 
     </main>
 
