@@ -19,7 +19,7 @@ const HomeExclusiveContainer = () => {
   return (
     <div className='exclusive-container'>
       <div>
-        <div className='title-flex'> 
+        <div className='title-flex'>
           <Sections section="EXCLUSIVE" />
           <Line />
         </div>
@@ -27,20 +27,20 @@ const HomeExclusiveContainer = () => {
       </div>
 
       <SectionLink linkText="View Leaderboard" />
-      
+
       <div className='ido-container'>
-        <Ido Logo ={IdoLogo} Name="Ancient Kingdom" 
-          Price="Price (GAC) = 0.83 BUSD" Coin={IdoCoin} 
+        <Ido Logo={IdoLogo} Name="Ancient Kingdom"
+          Price="Price (GAC) = 0.83 BUSD" Coin={IdoCoin}
           Hour="9 hours ago" X="x84" Ath="ATH $1,024.24"
         />
 
-        <Ido Logo ={IdoLogo} Name="Ancient Kingdom" 
-          Price="Price (GAC) = 0.83 BUSD" Coin={IdoCoin} 
+        <Ido Logo={IdoLogo} Name="Ancient Kingdom"
+          Price="Price (GAC) = 0.83 BUSD" Coin={IdoCoin}
           Hour="9 hours ago" X="x84" Ath="ATH $1,024.24"
         />
 
-        <Ido Logo ={IdoLogo} Name="Ancient Kingdom" 
-          Price="Price (GAC) = 0.83 BUSD" Coin={IdoCoin} 
+        <Ido Logo={IdoLogo} Name="Ancient Kingdom"
+          Price="Price (GAC) = 0.83 BUSD" Coin={IdoCoin}
           Hour="9 hours ago" X="x84" Ath="ATH $1,024.24"
         />
       </div>
