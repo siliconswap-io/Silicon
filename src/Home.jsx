@@ -8,25 +8,29 @@ import HowItWorksContainer from './homepage_components/HowItWorksContainer';
 import ExclusiveContainer from './homepage_components/ExclusiveContainer';
 import IdoStakeContainer from './homepage_components/IdoStakeContainer';
 import ProjectContainer from './homepage_components/ProjectContainer';
+import FooterContainer from './homepage_components/FooterContainer';
 
 function Home() {
   return <div>
     <header>
-      <Navbar/>
+      <Navbar />
 
     </header>
     <main>
-      <TopContainer/>
-      <FeaturesContainer/>
-      <HowItWorksContainer/>
-      <ExclusiveContainer/>
-      <IdoStakeContainer/>
-      <ProjectContainer/>
+      <TopContainer />
+      <FeaturesContainer />
+      <HowItWorksContainer />
+      <ExclusiveContainer />
+      <IdoStakeContainer />
+      <ProjectContainer />
 
     </main>
+    <footer>
+      <FooterContainer />
+    </footer>
 
-  </div> 
- 
+  </div>
+
 }
 
 export default Home;

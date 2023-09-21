@@ -1,0 +1,45 @@
+.footer-container {
+    padding: 5rem 5.75rem 3rem;
+    background-color: #000000;
+    display: flex;
+    gap: 4rem;
+}
+
+.logo-section {
+    width: 50%;
+}
+
+.logo-section p{
+    font-size: 1.25rem;
+}
+
+.silicon-socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.silicon-socials img {
+    padding: 0.5rem;
+    border-radius: 0.625rem;
+    background-color: #4A4A4A;
+    cursor: pointer;
+}
+
+.footer-sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sections h3 {
+    color: #3689E5;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem;
+}
+
+.footer-sections a {
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
