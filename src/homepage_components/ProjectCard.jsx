@@ -15,6 +15,7 @@ const ProjectCard = (props) => {
     // props for card header 
     const {cardLogo, cardName, cardDesc, cardCoin } = props;
 
+    // props for asset and currency
     const {raisedAsset, baseCurrency} = props;
 
     // state for values 
@@ -38,9 +39,9 @@ const ProjectCard = (props) => {
         </div>
 
         <div className='value-flex'>
-            <p>Total raise {totalRaised}K</p>
-            <p>Value {value}K</p>
-            <p>Main size {mainSize}</p>
+            <p>Total raise <span>{totalRaised}K</span></p>
+            <p>Value <span>{value}K</span></p>
+            <p>Main size <span>{mainSize}</span></p>
         </div>
 
         <div className='progress-bar-cont'>
