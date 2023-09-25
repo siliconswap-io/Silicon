@@ -9,6 +9,7 @@ import ExclusiveContainer from './homepage_components/ExclusiveContainer';
 import IdoStakeContainer from './homepage_components/IdoStakeContainer';
 import ProjectContainer from './homepage_components/ProjectContainer';
 import FooterContainer from './homepage_components/FooterContainer';
+import TeamContainer from './homepage_components/TeamContainer';
 
 function Home() {
   return <div>
@@ -23,7 +24,7 @@ function Home() {
       <ExclusiveContainer />
       <IdoStakeContainer />
       <ProjectContainer />
-
+      <TeamContainer />
     </main>
     <footer>
       <FooterContainer />
