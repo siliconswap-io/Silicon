@@ -12,10 +12,34 @@
     margin-top: 2rem;
 }
 
-.carousel-items {
-    display: flex;
-    gap: 1.5rem;
+.react-multi-carousel-list {
+    padding: 0 0 3rem;
 }
+
+.custom-dot-list-style {
+    padding: 2rem;
+}
+
+.custom-dot-list-style li button {
+    width: 1.5rem;
+    height: 0.5rem;
+    border-radius: 20%;
+    border: none;
+}
+
+.react-multi-carousel-dot--active button {
+    background-color: #0043FE !important;
+}
+
+
+/* .react-multiple-carousel__arrow--left {
+    left: -2% !important;
+    z-index: 2000 !important;
+}
+
+.carousel__arrow--right {
+    right: -2% !important;
+} */
 
 .team-card {
     background-color: #15152D;

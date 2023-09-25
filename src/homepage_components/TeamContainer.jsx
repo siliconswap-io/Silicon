@@ -51,7 +51,8 @@ const TeamContainer = () => {
             </div>
 
             <div className="carousel-container">
-                <Carousel responsive={responsive}>
+                <Carousel responsive={responsive} showDots={true} dotListClass="custom-dot-list-style"
+                >
                     <TeamCard memberImg={ImageExample} memberName="John Doe" memberPosition="CEO"
                         facebookHref="https://example.com" linkdinHref="https://example.com"
                         xHref="https://example.com"
