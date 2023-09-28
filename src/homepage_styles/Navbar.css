@@ -47,3 +47,53 @@
     font-size: 1.125rem;
     cursor: pointer;
 }
+
+.bar-icon {
+    display: none;
+}
+
+@media (max-width:1370px) {
+    .nav ul {
+        margin: 0 15% 0  0;
+    }
+}
+
+@media (max-width:1285px) {
+    .nav ul {
+        margin: 0 10% 0  0;
+    }
+}
+
+@media (max-width:1200px) {
+    .silicon-logo {
+        margin-right: 10%;
+    }
+}
+
+@media (max-width:1120px) {
+    .silicon-logo {
+        margin-right: 5%;
+    }
+
+    .nav ul {
+        margin: 0 5% 0  0;
+    }
+}
+
+@media (max-width:1000px) {
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav ul, .connect-btn, .search-icon {
+        display: none;
+    }
+
+    .bar-icon {
+        display: inline;
+        font-size: 2rem;
+        cursor: pointer;
+        margin-right: 4rem;
+    }
+
+}

@@ -68,6 +68,26 @@
     font-weight: 600;
 }
 
+.container {
+    height: 2.125rem;
+    background: #080A19;
+    border-radius: 2.125rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.barCompleted {
+    height: 2.125rem;
+    /* width: 40%; */
+    background: #0047FF;
+    transition: width 1s ease-in-out 0s;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .participate {
     display: flex;
     gap: 1rem;
