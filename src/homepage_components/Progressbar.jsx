@@ -1,24 +1,15 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 
+import ProgressBar from "@ramonak/react-progress-bar";
 
 const Progressbar = () => {
 
-    const [filled, setFilled] = useState(0);
-    const [isRunning, setIsRunning] = useState(false);
 
   return (
     <div>
-        <div className='progressbar'>
-            <div style={{
-                height: "100%",
-                width: `${filled}%`,
-                backgroundColor: 'blue',
-                transition: "width 0.5s"
-            }}></div>
-            <span>{ filled }%</span>
-        </div>
+       <ProgressBar completed={60} />
     </div>
   )
 }
 
-export default Progressbar
+export default Progressbar;

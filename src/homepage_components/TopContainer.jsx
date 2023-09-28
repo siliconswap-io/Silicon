@@ -30,8 +30,8 @@ function TopContainer() {
                 </a>
                 
             </div>
-            <img src={Rocket} className="rocket-icon" />
-            <img src={TOpImage} className="top-image" />
+            <img src={Rocket} className="rocket-icon" alt=""/>
+            <img src={TOpImage} className="top-image" alt=""/>
 
         </div>
     </div>

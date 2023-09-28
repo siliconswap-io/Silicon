@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import '../homepage_styles/Navbar.css'
 
 import logo from '../assets/images/sslog_a 1.png';
@@ -8,7 +12,7 @@ import walletIcon from '../assets/icons/wallet-icon.png';
 import NabarTags from './NabarTags'
 
 
-
+library.add(fas);
 
 function Navbar() {
     return <nav className="nav">
@@ -27,6 +31,7 @@ function Navbar() {
             <img src={walletIcon} />
             Connect Wallet
         </button>
+        <FontAwesomeIcon icon="fa-solid fa-bars-staggered" className='bar-icon' />
     </nav>
 
 }
