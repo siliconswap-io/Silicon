@@ -25,7 +25,7 @@ function HomeFeaturesContainer() {
         </div>
         <div className='features-flex'>
             <div className='staking div'>
-                <img src={StakingImg} />
+                <img src={StakingImg} alt=''/>
                 <FeaturesCard cardTitle="Staking" 
                     cardContent="Silicon Swap enables you to participate in the network's consensus
                      mechanism and earn rewards in return. By staking your tokens, 
@@ -37,7 +37,7 @@ function HomeFeaturesContainer() {
                 />
             </div>
             <div className='yield div'>
-                <img src={YieldImg} />
+                <img src={YieldImg} alt='' />
                 <FeaturesCard cardTitle="Yield Farms" 
                     cardContent="Silicon Swap allows you to become a liquidity provider, 
                     offering your digital assets to various liquidity pools. As a provider, 
@@ -49,7 +49,7 @@ function HomeFeaturesContainer() {
                 />
             </div>
             <div className='lending div'>
-                <img src={LendingImg} />
+                <img src={LendingImg} alt=''/>
                 <FeaturesCard cardTitle="Lending & Borrowing" 
                     cardContent="Silicon Swap empowers you with the ability to lend and borrow digital assets. 
                     As a lender, you can earn interest on your idle tokens, 
