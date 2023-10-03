@@ -20,12 +20,9 @@ const ProjectCard = (props) => {
     const { raisedAsset, baseCurrency } = props;
 
     // state for values 
-    const [totalRaised, setTotalRaised] = useState(100);
-    setTotalRaised(totalRaised)
-    const [value, setValue] = useState(120);
-    setValue(value)
-    const [mainSize, setMainSize] = useState(10)
-    setMainSize(mainSize)
+    const [totalRaised] = useState(100);
+    const [value] = useState(120);
+    const [mainSize] = useState(10)
 
     // const [width, setWidth] = useState(50);
 
