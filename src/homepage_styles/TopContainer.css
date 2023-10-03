@@ -1,6 +1,7 @@
 /* ////// TOP CONTAINER SECTION ////// */
 .top-container {
     padding: 7rem 4.75rem 4rem;
+    /* filter: blur(0.8rem); */
 }
 
 .top-container h1 {

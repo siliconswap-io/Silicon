@@ -13,20 +13,16 @@
     justify-content: end;
 }
 
-.section-link a{
+.section-link a {
     display: flex;
     align-items: center;
     gap: 1rem;
-    color:#FFFFFF;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 700;
     cursor: pointer;
 }
-
-/* .section-link a:hover {
-    color: #500E98;
-} */
 
 .ido-container {
     display: flex;
@@ -37,7 +33,7 @@
 .ido {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     border-radius: 1.25rem;
     background-color: #121528;
     padding: 2.5rem;
@@ -54,11 +50,13 @@
     margin-bottom: 0;
 }
 
-.ido-hour, .ido-x, .ido-ath {
+.ido-hour,
+.ido-x,
+.ido-ath {
     background-color: #080A19;
     border-radius: 1.25rem;
     font-size: 1.125rem;
-    
+
     font-weight: 500;
 }
 
@@ -67,9 +65,141 @@
 }
 
 .ido-x {
-    padding: 0.187rem 0.375rem;   
+    padding: 0.187rem 0.375rem;
 }
 
 .ido-ath {
     padding: 0.187rem 0.75rem;
+}
+
+
+
+/* ////// MEDIA RESPONSIVENESS ////// */
+
+@media (max-width:1100px) {
+    .ido-logo {
+        width: 10%;
+    }
+
+    .ido h4 {
+        font-size: 1.2rem;
+    }
+
+    .name-price p {
+        font-size: 1rem;
+    }
+
+    .coin-logo {
+        width: 5%;
+    }
+
+    .ido-hour,
+    .ido-x,
+    .ido-ath {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:1000px) {
+    .section-link a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:950px) {
+    .ido {
+        padding: 2rem 1.5rem;
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width:870px) {
+    .exclusive-container {
+        padding: 8rem 3rem 3rem;
+    }
+}
+
+@media (max-width:800px) {
+    .ido h4 {
+        font-size: 1rem;
+    }
+
+    .name-price p {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .ido-hour,
+    .ido-x,
+    .ido-ath {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:700px) {
+    .ido {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .ido-logo {
+        width: 7%;
+    }
+
+    .coin-logo {
+        width: 3%;
+    }
+}
+
+@media (max-width:600px) {
+    .ido-logo {
+        width: 5%;
+    }
+
+    .coin-logo {
+        width: 2%;
+    }
+
+    .ido h4 {
+        font-size: 0.8rem;
+    }
+    .name-price p {
+        font-size: 0.6rem;
+        margin-top: 0.25rem;
+    }
+
+    .ido-hour,
+    .ido-x,
+    .ido-ath {
+        font-size: 0.6rem;
+
+    }
+}
+
+@media (max-width:500px) {
+    .exclusive-container {
+        padding: 8rem 1.5rem 3rem;
+    }
+}
+
+@media (max-width:450px) {
+    .ido {
+        padding: 1rem 0.5rem;
+    }
+
+    .ido h4 {
+        font-size: 0.6rem;
+    }
+    .name-price p {
+        font-size: 0.4rem;
+        margin-top: 0.25rem;
+    }
+
+    .ido-hour,
+    .ido-x,
+    .ido-ath {
+        font-size: 0.4rem;
+
+    }
 }

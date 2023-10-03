@@ -8,12 +8,12 @@ const Ido = (props) => {
     
     return (
     <div className='ido'>
-        <img src={Logo} />
+        <img className='ido-logo' src={Logo} alt=''/>
         <div className='name-price'>
             <h4>{Name}</h4>
             <p>{Price}</p>
         </div>
-        <img src={Coin} />
+        <img className='coin-logo' src={Coin} alt=''/>
         <p className='ido-hour'>{Hour}</p>
         <p className='ido-x'>{X}</p>
         <p className='ido-ath'>{Ath}</p>

@@ -29,25 +29,25 @@ const HowItWorksContainer = () => {
             Support game by providing IP or just stake the game and get rewards.
         </p>
         <div className='img-content-flex'>
-            <img src={HowImg} />
+            <img className='img-content' src={HowImg} alt=''/>
             <div className="how-content-container">
                 <div className="kyc div">
                     <HowContent howH4="Submit KYC" howP="Join IDOs on multiple blockchains in a single click. 
                         Support game by providing and get rewards." 
                     />
-                    <img src={KycImg} />
+                    <img src={KycImg} alt=''/>
                 </div>
                 <div className="verify div">
                     <HowContent howH4="Verify Wallet" howP="Join IDOs on multiple blockchains in a single click. 
                         Support game by providing and get rewards." 
                     />
-                    <img src={VerifyImg} />
+                    <img src={VerifyImg} alt=''/>
                 </div>
                 <div className="start-staking div">
                     <HowContent howH4="Start Staking" howP="Join IDOs on multiple blockchains in a single click. 
                         Support game by providing and get rewards." 
                     />
-                    <img src={StartStakingImg} />
+                    <img src={StartStakingImg} alt=''/>
                 </div>
                 
             </div>
