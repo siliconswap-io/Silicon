@@ -1,0 +1,138 @@
+.features-container {
+    padding: 3rem 5.75rem;
+}
+
+.line {
+    width: 6.25rem;
+    height: 0.5rem;
+    background: linear-gradient(90deg, #0043FE -10.61%, #500E98 117.53%);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.title-flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section {
+    font-size: 1.375rem;
+    background-image: linear-gradient(90deg, #0043FE -10.61%, #500E98 117.53%);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    margin: 0;
+}
+
+.sub-sections {
+    font-weight: 700;
+    font-size: 2.3125rem;
+}
+
+.features-flex {
+    display: flex;
+    align-items: end;
+    gap: 3rem;
+}
+
+.features-flex .div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.features-flex .div:hover {
+    transform: scale(1.05);
+    /* border: 1px solid #0166FF; */
+}
+
+.features-flex div img {
+    z-index: 1;
+}
+
+.card-content {
+    background-color: #41446933;
+    border-radius: 0.75rem;
+    padding: 8rem 1.25rem 1.5rem;
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.card-content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0;
+    text-align: justify;
+}
+
+.card-content button {
+    padding: 1rem 3rem;
+    border-radius: 2.375rem;
+    border: 1px solid #0166FF;
+    background-color: transparent;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+/* ////// MEDIA RESPONSIVENESS ////// */
+
+@media (max-width:1100px) {
+    .features-flex {
+        gap: 2rem;
+    }
+    
+}
+
+@media (max-width:1000px) {
+    .features-flex {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:870px) {
+    .features-container {
+        padding: 3rem 3rem;
+    }
+}
+
+@media (max-width:700px) {
+    .section {
+        font-size: 1rem;
+    }
+
+    .sub-sections {
+        font-size: 2rem;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .features-container {
+        padding: 3rem 1.5rem;
+    }
+
+    .features-flex {
+        gap: 3rem;
+    }
+    
+    .card-content button {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+}

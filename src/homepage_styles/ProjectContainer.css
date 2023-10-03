@@ -1,0 +1,110 @@
+.project-container {
+    padding: 8rem 5.75rem 3rem;
+}
+
+.project-card-cont {
+    display: flex;
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #16182D;
+    padding: 2.8rem 2rem;
+    border-radius: 1.875rem;
+}
+
+.card-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
+.card-logo-text {
+    display: flex;
+    align-items: start;
+    gap: 1.5rem;
+}
+
+.card-text h4 {
+    font-size: 1.375rem;
+    margin: 0
+}
+
+.card-text p {
+    margin: 0.5rem 0 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.value-flex {
+    display: flex;
+    gap: 0.7rem;
+    margin-bottom: 3rem
+}
+
+.value-flex p {
+    background-color: #080A19;
+    border-radius: 1rem;
+    font-size: 0.7rem;
+    padding: 0.5rem 0.8rem;
+}
+
+.value-flex p span {
+    font-weight: 600;
+}
+
+.progress-bar-cont {
+    margin-bottom: 3rem;
+}
+
+.raised-asset-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.raised-asset-cont p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.container {
+    height: 2.125rem;
+    background: #080A19;
+    border-radius: 2.125rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.barCompleted {
+    height: 2.125rem;
+    /* width: 40%; */
+    background: #0047FF;
+    transition: width 1s ease-in-out 0s;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.participate {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.participate button {
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: 2px solid #FFFFFF;
+    border-radius: 1.5rem;
+    padding: 0.8125rem 1.375rem;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.5rem;
+}

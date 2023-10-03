@@ -1,0 +1,155 @@
+/* ////// TOP CONTAINER SECTION ////// */
+.top-container {
+    padding: 7rem 4.75rem 4rem;
+    /* filter: blur(0.8rem); */
+}
+
+.top-container h1 {
+    color: #FFFFFF;
+    font-size: 3.125rem;
+    text-align: center;
+    width: 78%;
+    margin: 0 auto;
+}
+
+.top-flex {
+    display: flex;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.rocket-icon {
+    position: absolute;
+    left: 50%;
+}
+
+.top-container h4 {
+    font-size: 1.5rem;
+}
+
+.top-container p {
+    font-size: 1.374rem;
+    line-height: 2.25rem;
+}
+
+.launchapp-btn {
+    background: linear-gradient(90deg, #0043FE -10.61%, #500E98 117.53%);
+    display: flex;
+    align-items: center;
+    padding: 1.375rem 3rem;
+    font-size: 1.5rem;
+    gap: 1rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 3rem;
+    cursor: pointer;
+    margin-top: 3rem;
+    border: none;
+}
+
+.top-image {
+    width: 50%;
+    height: auto;
+}
+
+/* ////// MEDIA RESPONSIVENESS ////// */
+
+@media (max-width:1350px) {
+    .top-container h1 {
+        font-size: 3rem;
+    }
+
+    .top-container p {
+        font-size: 1rem;
+    }
+
+    .launchapp-btn {
+        padding: 1rem 2rem;
+    }  
+}
+
+@media (max-width:1100px) {
+    .top-container h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:950px) {
+    .top-container h1 {
+        font-size: 2rem;
+    }
+
+    .top-container h4 {
+        font-size: 1.2rem
+    }
+
+    .top-container p {
+        line-height: 1.5rem;
+    }
+
+    .launchapp-btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:870px) {
+    .top-container {
+        padding: 7rem 3rem 4rem;
+    }
+    
+}
+
+@media (max-width:800px) {
+    .top-flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .top-container h1 {
+        width: 100%;
+    }
+
+    .top-image {
+        width: 100%;
+    }
+
+    .rocket-icon {
+        top: 30%;
+        left: 30%;
+    }
+}
+
+
+
+
+@media (max-width:500px) {
+    .top-container {
+        padding: 7rem 1.5rem 4rem;
+    }
+
+    .top-flex {
+        margin-top: 3rem;
+    }
+
+    .top-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .top-container h4 {
+        font-size: 1rem;
+    }
+
+    .top-container p {
+        font-size: 0.8rem;
+    }
+
+    .launchapp-btn {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .rocket-icon {
+        height: 4rem;
+        width: 4rem;
+        top: 32%;
+    }
+}
