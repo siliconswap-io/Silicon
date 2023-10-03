@@ -16,8 +16,8 @@ library.add(fas);
 
 function Navbar() {
     return <nav className="nav">
-        <a href="" className="silicon-logo">
-            <img src={logo} />
+        <a href="https://example.com" className="silicon-logo">
+            <img src={logo} alt=''/>
         </a>
         <ul>
             <NabarTags tags="Home" />
@@ -26,9 +26,9 @@ function Navbar() {
             <NabarTags tags="Earn" />
             <NabarTags tags="Contact" />
         </ul>
-        <img className="search-icon" src={searchIcon} />
+        <img className="search-icon" src={searchIcon} alt=''/>
         <button className="connect-btn">
-            <img src={walletIcon} />
+            <img src={walletIcon} alt=''/>
             Connect Wallet
         </button>
         <FontAwesomeIcon icon="fa-solid fa-bars-staggered" className='bar-icon' />

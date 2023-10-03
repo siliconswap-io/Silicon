@@ -13,8 +13,6 @@ import SubSections from './SubSections';
 
 /* ////// IMAGES ////// */
 import ImageExample from "../assets/images/img-example.png";
-import RightIcon from "../assets/icons/right-icon.png";
-import LeftIcon from "../assets/icons/left-icon.png";
 
 
 

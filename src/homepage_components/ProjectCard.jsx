@@ -21,8 +21,11 @@ const ProjectCard = (props) => {
 
     // state for values 
     const [totalRaised, setTotalRaised] = useState(100);
+    setTotalRaised(totalRaised)
     const [value, setValue] = useState(120);
+    setValue(value)
     const [mainSize, setMainSize] = useState(10)
+    setMainSize(mainSize)
 
     // const [width, setWidth] = useState(50);
 
@@ -65,16 +68,16 @@ const ProjectCard = (props) => {
             <div className='participate'>
                 <button>Participate</button>
                 <div className="social-icons">
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://example.com" target="_blank" rel="noopener noreferrer">
                         <img src={XIcon} alt="" />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://example.com" target="_blank" rel="noopener noreferrer">
                         <img src={TelegramIcon} alt="" />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://example.com" target="_blank" rel="noopener noreferrer">
                         <img src={WebIcon} alt="" />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://example.com" target="_blank" rel="noopener noreferrer">
                         <img src={DicordIcon} alt="" />
                     </a>
                 </div>
