@@ -8,13 +8,13 @@
 .participant-ido-stake {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     margin-bottom: 5rem;
 }
 
 .stake-logo-text {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     gap: 1rem;
     width: 60%;
 }

@@ -11,7 +11,7 @@
 .title {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .title-flex {
@@ -37,7 +37,7 @@
 
 .features-flex {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     gap: 3rem;
 }
 
@@ -89,6 +89,7 @@
     font-weight: 500;
     margin-top: 2rem;
 }
+
 
 /* ////// MEDIA RESPONSIVENESS ////// */
 
