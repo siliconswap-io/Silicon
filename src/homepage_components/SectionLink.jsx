@@ -7,9 +7,9 @@ const SectionLink = (props) => {
 
     return (
       <div className='section-link'>
-        <a href="">
+        <a href="https://example.com">
           <p>{linkText}</p>
-          <img src={ArrowRight} />
+          <img src={ArrowRight} alt=""/>
         </a>
         
       </div>
