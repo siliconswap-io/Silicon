@@ -95,6 +95,17 @@
     }
 }
 
+@media (max-width:700px) {
+    .section {
+        font-size: 1rem;
+    }
+
+    .sub-sections {
+        font-size: 2rem;
+    }
+    
+}
+
 @media (max-width:550px) {
     .how-content h4 {
         font-size: 1rem;
