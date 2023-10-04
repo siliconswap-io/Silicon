@@ -131,6 +131,14 @@
     .features-flex {
         gap: 3rem;
     }
+
+    .section {
+        font-size: 1rem;
+    }
+
+    .sub-sections {
+        font-size: 1.5rem;
+    }
     
     .card-content button {
         padding: 0.5rem 1.5rem;

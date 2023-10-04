@@ -41,7 +41,7 @@ const ProjectCard = (props) => {
                     </div>
                 </div>
 
-                <img src={cardCoin} alt='' />
+                <img className='card-coin' src={cardCoin} alt='' />
             </div>
 
             <div className='value-flex'>
