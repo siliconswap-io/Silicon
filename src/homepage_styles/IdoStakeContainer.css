@@ -27,7 +27,7 @@
 }
 
 .stake-text p {
-    margin: 0 0 2.5rem;
+    margin: 0 0 1rem;
     font-weight: 600;
     font-size: 1.5rem;
 }
@@ -126,3 +126,166 @@
     font-size: 1rem;
     margin-bottom: 1rem;
 }
+
+@media (max-width:1300px) {
+    .stake-logo-text img {
+        width: 15%;
+    }
+    .stake-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .stake-text p {
+        font-size: 1rem;
+    }
+    
+    .stake-text small {
+        font-size: 0.8rem;
+    }
+
+    .stake-details p, .pend-reward {
+        font-size: 1.2rem;
+    }
+    
+    .wit-dep-stake p {
+        font-size: 1.2rem;
+    }
+
+    .input-btn input {
+        width: 8rem;
+    }
+
+    .stake-button, .pending-rewards button {
+        padding: 1rem 3rem;
+    }
+
+    .reward-value {
+        font-size: 1.8rem;
+    }
+    
+    .pending-rewards small {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .ido-stake-container {
+        padding: 3rem 1.8rem;
+    }
+
+    .stake-logo-text {
+        width: 80%;
+    }
+
+    .token-details {
+        padding: 1.5rem 2rem;
+    }
+    
+    .deposit-withdraw {
+        gap: 1.5rem;
+    }
+
+    .input-btn input {
+        width: 6rem;
+        font-size: 1.2rem;
+    }
+    
+    .input-btn button {
+        font-size: 1.2rem;
+    }
+    
+    .stake-button, .pending-rewards button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:900px) {
+    .stake-text h3 {
+        font-size: 1rem;
+    }
+    
+    .stake-text p {
+        font-size: 0.8rem;
+    }
+    
+    .stake-text small {
+        font-size: 0.6rem;
+    }
+
+    .stake-details p, .pend-reward {
+        font-size: 0.9rem;
+    }
+    
+    .wit-dep-stake p {
+        font-size: 0.9rem;
+    }
+
+    .input-btn input {
+        width: 5rem;
+        font-size: 1rem;
+    }
+    
+    .input-btn button {
+        font-size: 1rem;
+    }
+    
+    .stake-button, .pending-rewards button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .reward-value {
+        font-size: 1.2rem;
+    }
+    
+    .pending-rewards small {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:870px) {
+    .ido-stake-container {
+        margin: 3rem 3rem;
+    }
+}
+
+@media (max-width:720px) {
+    .deposit-withdraw {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width:600px) {
+    .token-details {
+        padding: 1.5rem 1rem;
+    }
+
+    .stake-details p, .pend-reward {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:500px) {
+    .ido-stake-container {
+        margin: 3rem 1.5rem;
+        padding: 3rem 1.3rem;
+        border-radius: 2rem
+    }
+
+    .stake-text p {
+        margin: 0 0 0.6rem;
+    }
+
+    .arrow-down {
+        width: 7%;
+    }
+}
+
+@media (max-width:380px) {
+    .token-details {
+        padding: 1.5rem 0;
+    }
+    
+}
+
