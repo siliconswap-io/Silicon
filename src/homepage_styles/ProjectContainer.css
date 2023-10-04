@@ -108,3 +108,13 @@
     display: flex;
     gap: 0.5rem;
 }
+
+@media (max-width:1300px) {
+    .card-logo-text img {
+        width: 30%;
+    }
+
+    .card-coin {
+        width: 10%;
+    }
+}
