@@ -59,6 +59,8 @@
     margin-top: 3rem;
 }
 
+/* ////// MEDIA RESPONSIVENESS ////// */
+
 @media (max-width:1240px) {
     .team-card h4 {
         font-size: 1.5rem;
