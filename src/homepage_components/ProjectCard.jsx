@@ -6,7 +6,8 @@ import DicordIcon from "../assets/icons/discord-icon.png";
 import WebIcon from "../assets/icons/web-icon.png";
 import XIcon from "../assets/icons/x-icon.png";
 import TelegramIcon from "../assets/icons/telegram-icon.png";
-import ProgressBar from '@ramonak/react-progress-bar';
+import Progressbar from './Progressbar';
+// import ProgressBar from '@ramonak/react-progress-bar';
 
 
 
@@ -25,10 +26,6 @@ const ProjectCard = (props) => {
     const [mainSize] = useState(10)
 
     // const [width, setWidth] = useState(50);
-
-
-    
-
 
     return (
         <div className='project-card'>
@@ -51,11 +48,7 @@ const ProjectCard = (props) => {
             </div>
 
             <div className='progress-bar-cont'>
-                <ProgressBar completed={50}
-                    // className="wrapper"
-                    // barContainerClassName="container"
-                    // completedClassName="barCompleted"
-                    labelClassName="label" />
+            <Progressbar bgcolor="#0047FF" height={32} />
                 <div className='raised-asset-cont'>
                     <p>{raisedAsset}</p>
                     <p>{baseCurrency}</p>
