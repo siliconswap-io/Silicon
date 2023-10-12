@@ -10,12 +10,13 @@ import IdoStakeContainer from './homepage_components/IdoStakeContainer';
 import ProjectContainer from './homepage_components/ProjectContainer';
 import FooterContainer from './homepage_components/FooterContainer';
 import TeamContainer from './homepage_components/TeamContainer';
+import ConnectWalletContainer from './homepage_components/ConnectWalletContainer';
 
 function Home() {
   return <div>
     <header>
       <Navbar />
-
+      <ConnectWalletContainer />
     </header>
     <main>
       <TopContainer />
