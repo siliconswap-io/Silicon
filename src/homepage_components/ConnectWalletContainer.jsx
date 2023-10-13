@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import '../homepage_styles/ConnectWalletContainer.css'
 
@@ -14,33 +14,41 @@ import braveWallet from "../assets/images/brave_wallet.png";
 import walletConnect from "../assets/images/wallet_connect.png";
 
 /* ////// PAGES ////// */
-import  WalletType from './WalletType';
+import WalletType from './WalletType';
 
 
-const ConnectWalletContainer = ({removeDisplay}) => {
-  return (
-    <div className='connect-wallet-container inactive'>
-        <div className="connect-wallet">
-            <div className="connect-text">
-                <h3>Connect Wallet</h3>
-                <p>Select your wallet from the options below to get started.</p>
-            </div>
-            <img className='close-icon' src={CloseIcon} alt="" />
+
+const ConnectWalletContainer = () => {
+  const [connectWalletVisible, setConnectWalletVisible] = useState(true);
+
+  const toggleConnectWallet = () => {
+    setConnectWalletVisible(!connectWalletVisible);
+  };
+  
+  return ( connectWalletVisible &&  (
+    <div className='connect-wallet-container'>
+      <div className="connect-wallet">
+        <div className="connect-text">
+          <h3>Connect Wallet</h3>
+          <p>Select your wallet from the options below to get started.</p>
         </div>
+        <img className='close-icon' src={CloseIcon} alt="" onClick={toggleConnectWallet} />
+      </div>
 
-        <div className="wallet-types-cont">
-            <WalletType walletLogo={trustWallet} walletName="TrustWallet" />
-            <WalletType walletLogo={metaMask} walletName="MetaMask" />
-            <WalletType walletLogo={phantom} walletName="Phantom" />
-            <WalletType walletLogo={coinBase} walletName="Coinbase" />
-            <WalletType walletLogo={walletConnect} walletName="WalletConnect" />
-            <WalletType walletLogo={coin98} walletName="Coin98" />
-            <WalletType walletLogo={braveWallet} walletName="BraveWallet" />
-            <WalletType walletLogo={enjin} walletName="Enjin" />
-        </div>
+      <div className="wallet-types-cont">
+        <WalletType walletLogo={trustWallet} walletName="TrustWallet" />
+        <WalletType walletLogo={metaMask} walletName="MetaMask" />
+        <WalletType walletLogo={phantom} walletName="Phantom" />
+        <WalletType walletLogo={coinBase} walletName="Coinbase" />
+        <WalletType walletLogo={walletConnect} walletName="WalletConnect" />
+        <WalletType walletLogo={coin98} walletName="Coin98" />
+        <WalletType walletLogo={braveWallet} walletName="BraveWallet" />
+        <WalletType walletLogo={enjin} walletName="Enjin" />
+      </div>
+      
 
     </div>
-  )
+  ) )
 }
 
 export default ConnectWalletContainer;
