@@ -11,8 +11,6 @@ import searchIcon from '../assets/icons/search-icon.png';
 import walletIcon from '../assets/icons/wallet-icon.png';
 import NabarTags from './NabarTags'
 
-
-
 library.add(fas);
 
 function Navbar() {
@@ -33,7 +31,6 @@ function Navbar() {
             <img src={walletIcon} alt='' />
             Connect Wallet
         </button>
-        
         <FontAwesomeIcon icon="fa-solid fa-bars-staggered" className='bar-icon' />
     </nav>
 

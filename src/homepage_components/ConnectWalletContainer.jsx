@@ -17,9 +17,9 @@ import walletConnect from "../assets/images/wallet_connect.png";
 import  WalletType from './WalletType';
 
 
-const ConnectWalletContainer = () => {
+const ConnectWalletContainer = ({removeDisplay}) => {
   return (
-    <div className='connect-wallet-container'>
+    <div className='connect-wallet-container inactive'>
         <div className="connect-wallet">
             <div className="connect-text">
                 <h3>Connect Wallet</h3>
