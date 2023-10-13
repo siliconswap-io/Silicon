@@ -7,11 +7,11 @@
     background-color: #080A19;
     border: 1px solid #FFFFFF33;
     border-radius: 0.75rem;
-    /* display: none; */
+    
 }
 
-.connect-wallet-container.visible {
-    display: block;
+.connect-wallet-container.inactive {
+    display: none;
 }
 
 .connect-wallet {
