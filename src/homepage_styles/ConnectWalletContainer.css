@@ -7,11 +7,6 @@
     background-color: #080A19;
     border: 1px solid #FFFFFF33;
     border-radius: 0.75rem;
-    
-}
-
-.connect-wallet-container.inactive {
-    display: none;
 }
 
 .connect-wallet {
@@ -45,6 +40,9 @@
 
 .wallet-logo {
     border: 1.6px solid #FFFFFF66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 0.75rem;
     padding: 1.5625rem;
     cursor: pointer;
@@ -56,3 +54,51 @@
     margin: 0.5rem 0 0;
     text-align: center;
 }
+
+@media (max-width:800px) {
+    .connect-wallet h3 {
+        font-size: 1rem;
+    }
+    
+    .connect-wallet p {
+        font-size: 0.7rem;
+    }
+
+    .wallet-logo {
+        padding: 1rem;
+    }
+
+    .wallet-logo img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .wallet-type p {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:600px) {
+    .connect-wallet-container {
+        left: 15%;
+    }
+
+    .wallet-types-cont {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:500px) {
+    .connect-wallet-container {
+        left: 10%;
+    }
+
+    .connect-wallet h3 {
+        font-size: 0.8rem;
+    }
+    
+    .connect-wallet p {
+        font-size: 0.6rem;
+    }
+}
+
