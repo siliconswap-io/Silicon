@@ -7,6 +7,11 @@
     background-color: #080A19;
     border: 1px solid #FFFFFF33;
     border-radius: 0.75rem;
+    overflow: auto;
+}
+
+.connect-wallet-container::-webkit-scrollbar{
+    display: none;
 }
 
 .connect-wallet {
@@ -102,3 +107,18 @@
     }
 }
 
+@media (max-width:420px) {
+    .connect-wallet-container {
+        padding: 2.5rem 1rem;
+        /* left: 5%; */
+        width: 15rem;
+    }
+
+    .wallet-types-cont {
+        padding: 0 0.5rem;
+    }
+    .connect-wallet p {
+        width: 50%;
+    }
+    
+}

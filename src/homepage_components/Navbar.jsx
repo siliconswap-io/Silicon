@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React/*, {useState}*/ from 'react';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -11,16 +11,16 @@ import searchIcon from '../assets/icons/search-icon.png';
 import walletIcon from '../assets/icons/wallet-icon.png';
 
 import NabarTags from './NabarTags'
-import ConnectWalletContainer from './ConnectWalletContainer';
+// import ConnectWalletContainer from './ConnectWalletContainer';
 
 library.add(fas);
 
-function Navbar() {
-    const [connectWalletVisible, setConnectWalletVisible] = useState(false);
+function Navbar({onConnectClick}) {
+//     const [connectWalletVisible, setConnectWalletVisible] = useState(false);
 
-  const toggleConnectWallet = () => {
-    setConnectWalletVisible(!connectWalletVisible);
-  };
+//   const toggleConnectWallet = () => {
+//     setConnectWalletVisible(!connectWalletVisible);
+//   };
 
     return <div>
         <nav className="nav">
@@ -35,14 +35,14 @@ function Navbar() {
                 <NabarTags tags="Contact" />
             </ul>
             <img className="search-icon" src={searchIcon} alt='' />
-            <button className="connect-btn" onClick={toggleConnectWallet}>
+            <button className="connect-btn" onClick={onConnectClick}>
                 <img src={walletIcon} alt='' />
                 Connect Wallet
             </button>
             <FontAwesomeIcon icon="fa-solid fa-bars-staggered" className='bar-icon' />
         </nav>
-        {connectWalletVisible && (< ConnectWalletContainer />
-)}
+        {/* {connectWalletVisible && (< ConnectWalletContainer />
+)} */}
 
         
     </div>
