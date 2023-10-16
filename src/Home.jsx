@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+import "../src/homepage_styles/Home.css"
 
 /* ////// PAGES ////// */
 import Navbar from './homepage_components/Navbar';
@@ -10,13 +12,22 @@ import IdoStakeContainer from './homepage_components/IdoStakeContainer';
 import ProjectContainer from './homepage_components/ProjectContainer';
 import FooterContainer from './homepage_components/FooterContainer';
 import TeamContainer from './homepage_components/TeamContainer';
+import ConnectWalletContainer from './homepage_components/ConnectWalletContainer';
 
 function Home() {
-  return <div>
+  const [connectWalletVisible, setConnectWalletVisible] = useState(false);
+
+  const toggleConnectWallet = () => {
+    setConnectWalletVisible(!connectWalletVisible);
+  };
+
+  return ( <div>
     <header>
-      <Navbar />
+      <Navbar onConnectClick={toggleConnectWallet} />
+      {connectWalletVisible && (< ConnectWalletContainer/>)}
+
     </header>
-    <main>
+    <main className={`home-content ${connectWalletVisible ? 'blurred' : ''}`}>
       <TopContainer />
       <FeaturesContainer />
       <HowItWorksContainer />
@@ -25,12 +36,12 @@ function Home() {
       <ProjectContainer />
       <TeamContainer />
     </main>
-    <footer>
+    <footer className={`home-content ${connectWalletVisible ? 'blurred' : ''}`}>
       <FooterContainer />
     </footer>
 
   </div>
-
+)
 }
 
 export default Home;
