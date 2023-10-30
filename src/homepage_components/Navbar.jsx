@@ -4,23 +4,25 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { Link } from 'react-router-dom';
+
 import '../homepage_styles/Navbar.css'
 
 import logo from '../assets/images/sslog_a 1.png';
 import searchIcon from '../assets/icons/search-icon.png';
 import walletIcon from '../assets/icons/wallet-icon.png';
 
-import NabarTags from './NabarTags'
+// import NabarTags from './NabarTags'
 // import ConnectWalletContainer from './ConnectWalletContainer';
 
 library.add(fas);
 
-function Navbar({onConnectClick}) {
-//     const [connectWalletVisible, setConnectWalletVisible] = useState(false);
+function Navbar({ onConnectClick }) {
+    //     const [connectWalletVisible, setConnectWalletVisible] = useState(false);
 
-//   const toggleConnectWallet = () => {
-//     setConnectWalletVisible(!connectWalletVisible);
-//   };
+    //   const toggleConnectWallet = () => {
+    //     setConnectWalletVisible(!connectWalletVisible);
+    //   };
 
     return <div>
         <nav className="nav">
@@ -28,11 +30,21 @@ function Navbar({onConnectClick}) {
                 <img src={logo} alt='' />
             </a>
             <ul>
-                <NabarTags tags="Home" />
-                <NabarTags tags="Swap" />
-                <NabarTags tags="Launchpad" />
-                <NabarTags tags="Earn" />
-                <NabarTags tags="Contact" />
+                <li>
+                    <Link to="/" >Home</Link>
+                </li>
+                <li>
+                    <Link to="/Swap" >Swap</Link>
+                </li>
+                <li>
+                    <Link to="/Launchpad" >Launchpad</Link>
+                </li>
+                <li>
+                    <Link to="/Earn" >Earn</Link>
+                </li>
+                <li>
+                    <Link to="/Contact" >Contact</Link>
+                </li>
             </ul>
             <img className="search-icon" src={searchIcon} alt='' />
             <button className="connect-btn" onClick={onConnectClick}>
@@ -44,7 +56,7 @@ function Navbar({onConnectClick}) {
         {/* {connectWalletVisible && (< ConnectWalletContainer />
 )} */}
 
-        
+
     </div>
 
 }
