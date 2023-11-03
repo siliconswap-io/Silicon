@@ -4,35 +4,47 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { NavLink } from 'react-router-dom';
+
 import '../homepage_styles/Navbar.css'
 
 import logo from '../assets/images/sslog_a 1.png';
 import searchIcon from '../assets/icons/search-icon.png';
 import walletIcon from '../assets/icons/wallet-icon.png';
 
-import NabarTags from './NabarTags'
+// import NabarTags from './NabarTags'
 // import ConnectWalletContainer from './ConnectWalletContainer';
 
 library.add(fas);
 
-function Navbar({onConnectClick}) {
-//     const [connectWalletVisible, setConnectWalletVisible] = useState(false);
+function Navbar({ onConnectClick }) {
+    //     const [connectWalletVisible, setConnectWalletVisible] = useState(false);
 
-//   const toggleConnectWallet = () => {
-//     setConnectWalletVisible(!connectWalletVisible);
-//   };
+    //   const toggleConnectWallet = () => {
+    //     setConnectWalletVisible(!connectWalletVisible);
+    //   };
 
     return <div>
         <nav className="nav">
-            <a href="https://example.com" className="silicon-logo">
+            <a href="/Home" className="silicon-logo">
                 <img src={logo} alt='' />
             </a>
             <ul>
-                <NabarTags tags="Home" />
-                <NabarTags tags="Swap" />
-                <NabarTags tags="Launchpad" />
-                <NabarTags tags="Earn" />
-                <NabarTags tags="Contact" />
+                <li>
+                    <NavLink to="/" exact  >Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Swap" >Swap</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Launchpad" >Launchpad</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Earn" >Earn</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Contact" >Contact</NavLink>
+                </li>
             </ul>
             <img className="search-icon" src={searchIcon} alt='' />
             <button className="connect-btn" onClick={onConnectClick}>
@@ -44,7 +56,7 @@ function Navbar({onConnectClick}) {
         {/* {connectWalletVisible && (< ConnectWalletContainer />
 )} */}
 
-        
+
     </div>
 
 }

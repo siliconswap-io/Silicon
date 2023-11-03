@@ -30,6 +30,11 @@
     cursor: pointer;
 }
 
+/* .nav ul a.active-link {
+    color: #004AFF;
+} */
+
+
 .search-icon {
     margin-right: 2rem;
     cursor: pointer;
