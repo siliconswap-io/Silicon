@@ -4,7 +4,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import '../homepage_styles/Navbar.css'
 
@@ -26,24 +26,24 @@ function Navbar({ onConnectClick }) {
 
     return <div>
         <nav className="nav">
-            <a href="https://example.com" className="silicon-logo">
+            <a href="/Home" className="silicon-logo">
                 <img src={logo} alt='' />
             </a>
             <ul>
                 <li>
-                    <Link to="/" >Home</Link>
+                    <NavLink to="/" exact  >Home</NavLink>
                 </li>
                 <li>
-                    <Link to="/Swap" >Swap</Link>
+                    <NavLink to="/Swap" >Swap</NavLink>
                 </li>
                 <li>
-                    <Link to="/Launchpad" >Launchpad</Link>
+                    <NavLink to="/Launchpad" >Launchpad</NavLink>
                 </li>
                 <li>
-                    <Link to="/Earn" >Earn</Link>
+                    <NavLink to="/Earn" >Earn</NavLink>
                 </li>
                 <li>
-                    <Link to="/Contact" >Contact</Link>
+                    <NavLink to="/Contact" >Contact</NavLink>
                 </li>
             </ul>
             <img className="search-icon" src={searchIcon} alt='' />
