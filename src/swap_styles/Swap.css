@@ -1,4 +1,4 @@
-main {
+.swap-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +10,7 @@ main {
     width: 50%;
     padding: 2rem 2rem 3rem;
     border-radius: 0.5625rem;
+    background-color: #050220;
 }
 
 .title-setting {
@@ -37,23 +38,32 @@ main {
 }
 
 .first-token, .second-token {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #16182D;
     height: 8rem;
     margin-bottom: 0.5rem;
     border-radius: 0.5625rem;
-    padding: 0 1rem;
+    padding: 1.5rem 1rem 0;
 }
 
-.first-token p, .second-token p {
+.first-token-swap, .second-token-swap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-token-swap p, .second-token-swap p {
     margin: 0 ;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-.first-token select, .second-token select {
+.from, .to {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 1rem;
+}
+
+.first-token-swap select, .second-token-swap select {
     border: none;
     background-color: transparent;
     font-size: 1.5rem;
@@ -93,3 +103,4 @@ main {
     margin-top: 1rem;
     cursor: pointer;
 }
+

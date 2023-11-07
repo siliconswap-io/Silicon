@@ -5,6 +5,7 @@ import "../swap_styles/Swap.css"
 /* ////// PAGES ////// */
 import Navbar from '../homepage_components/Navbar';
 import ConnectWalletContainer from '../homepage_components/ConnectWalletContainer';
+import Slippage from '../swap_components/Slippage';
 
 /* ////// IMAGES ////// */
 import settingIcon from "../assets/icons/setting-icon.png";
@@ -16,6 +17,13 @@ export default function Swap() {
     const toggleConnectWallet = () => {
         setConnectWalletVisible(!connectWalletVisible);
     };
+
+    const [editSlippage, setEditSlippage] = useState(false);
+
+    const toggleSlippageSetting = () => {
+    setEditSlippage(!editSlippage);
+  };
+
     return (
         <div>
             <header>
@@ -23,27 +31,33 @@ export default function Swap() {
                 {connectWalletVisible && (< ConnectWalletContainer />)}
             </header>
 
-            <main>
+            <main className='swap-main'>
                 <div className='swap-container'>
                     <div className="title-setting">
                         <h2>Swap</h2>
-                        <div  className='setting-icon'>
+                        <div className='setting-icon' onClick={toggleSlippageSetting}>
                             <img src={settingIcon} alt="" />
-                        </div> 
+                        </div>
                     </div>
 
                     <div className="token-swap">
                         <div className="first-token">
-                            <p>0.0</p>
-                            <select name="" id="">
-                                <option value="ETH">ETH</option>
-                            </select>
+                            <p className='from'>From</p>
+                            <div className='first-token-swap'>
+                                <p>0.0</p>
+                                <select name="" id="">
+                                    <option value="ETH">ETH</option>
+                                </select>
+                            </div>
                         </div>
                         <div className="second-token">
-                            <p>0.0</p>
-                            <select name="" id="">
-                                <option value="BTC">BTC</option>
-                            </select>
+                            <p className='to'>To</p>
+                            <div className="second-token-swap">
+                                <p>0.0</p>
+                                <select name="" id="">
+                                    <option value="BTC">BTC</option>
+                                </select>
+                            </div>
                         </div>
                         <div className="swap-icon-cont">
                             <div className="swap-icon-inner">
@@ -52,7 +66,8 @@ export default function Swap() {
                         </div>
                     </div>
                     <button className='swap-btn'>Swap</button>
-                </div>
+                </div>    
+                {editSlippage && (<Slippage /> )}
             </main>
 
         </div>
