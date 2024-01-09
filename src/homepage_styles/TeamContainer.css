@@ -5,7 +5,7 @@
 .title {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .carousel-container {
@@ -32,15 +32,6 @@
 }
 
 
-/* .react-multiple-carousel__arrow--left {
-    left: -2% !important;
-    z-index: 2000 !important;
-}
-
-.carousel__arrow--right {
-    right: -2% !important;
-} */
-
 .team-card {
     background-color: #15152D;
     padding: 3.8rem 5rem;
@@ -66,4 +57,40 @@
     display: flex;
     gap: 1.5rem;
     margin-top: 3rem;
+}
+
+/* ////// MEDIA RESPONSIVENESS ////// */
+
+@media (max-width:1240px) {
+    .team-card h4 {
+        font-size: 1.5rem;
+    }
+    
+    .team-card p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:1120px) {
+    .team-card {
+        padding: 3.8rem 4rem;
+    }
+}
+
+@media (max-width:1020px) {
+    .team-card {
+        padding: 3rem 3rem;
+    }
+}
+
+@media (max-width:870px) {
+    .team-container {
+        padding: 5rem 3rem 8rem;
+    }
+}
+
+@media (max-width:500px) {
+    .team-container {
+        padding: 5rem 1.5rem 8rem;
+    }
 }

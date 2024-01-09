@@ -22,9 +22,9 @@ function TopContainer() {
                     Embrace the future of finance with our user-friendly  interface, 
                     lightning-fast transactions and unmatched liquidity.
                 </p>
-                <a href="">
+                <a href="https://example.com">
                     <button className="launchapp-btn">
-                        <img src={LaunchappIcon} />
+                        <img src={LaunchappIcon} alt=""/>
                         Launch dApp
                     </button>
                 </a>

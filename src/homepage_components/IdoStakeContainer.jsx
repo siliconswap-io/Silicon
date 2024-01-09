@@ -27,7 +27,7 @@ const IdoStakeContainer = (props) => {
 
             </div>
 
-            <img src={ArrowDown} />
+            <img className='arrow-down' src={ArrowDown} alt=''/>
         </div>
 
         <div className='token-details'>

@@ -13,8 +13,6 @@ import SubSections from './SubSections';
 
 /* ////// IMAGES ////// */
 import ImageExample from "../assets/images/img-example.png";
-import RightIcon from "../assets/icons/right-icon.png";
-import LeftIcon from "../assets/icons/left-icon.png";
 
 
 
@@ -27,15 +25,15 @@ const TeamContainer = () => {
             items: 5
         },
         desktop: {
-            breakpoint: { max: 1440, min: 800 },
+            breakpoint: { max: 1440, min: 930 },
             items: 3
         },
         tablet: {
-            breakpoint: { max: 800, min: 464 },
+            breakpoint: { max: 930, min: 600 },
             items: 2
         },
         mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 600, min: 0 },
             items: 1
         }
     };

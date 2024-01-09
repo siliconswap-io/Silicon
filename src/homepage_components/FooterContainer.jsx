@@ -22,13 +22,13 @@ const FooterContainer = () => {
                     innovative swapping solution.
                 </p>
                 <div className="silicon-socials">
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://example.com" target="_blank" rel="noopener noreferrer">
                         <img src={DicordIcon} alt="" />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://example.com" target="_blank" rel="noopener noreferrer">
                         <img src={XIcon} alt="" />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://example.com" target="_blank" rel="noopener noreferrer">
                         <img src={YoutubeIcon} alt="" />
                     </a>
                 </div>

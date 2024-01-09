@@ -11,7 +11,7 @@
 .title {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .title-flex {
@@ -37,7 +37,7 @@
 
 .features-flex {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     gap: 3rem;
 }
 
@@ -90,6 +90,7 @@
     margin-top: 2rem;
 }
 
+
 /* ////// MEDIA RESPONSIVENESS ////// */
 
 @media (max-width:1100px) {
@@ -129,6 +130,14 @@
 
     .features-flex {
         gap: 3rem;
+    }
+
+    .section {
+        font-size: 1rem;
+    }
+
+    .sub-sections {
+        font-size: 1.5rem;
     }
     
     .card-content button {

@@ -10,7 +10,7 @@
 
 .section-link {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .section-link a {
@@ -150,6 +150,7 @@
     .coin-logo {
         width: 3%;
     }
+    
 }
 
 @media (max-width:600px) {
@@ -203,3 +204,4 @@
 
     }
 }
+

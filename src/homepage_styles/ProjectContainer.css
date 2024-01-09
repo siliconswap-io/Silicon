@@ -16,13 +16,13 @@
 .card-name {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     margin-bottom: 3rem;
 }
 
 .card-logo-text {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     gap: 1.5rem;
 }
 
@@ -76,18 +76,6 @@
     overflow: hidden;
 }
 
-
-.barCompleted {
-    height: 2.125rem;
-    /* width: 40%; */
-    background: #0047FF;
-    transition: width 1s ease-in-out 0s;
-    border-radius: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .participate {
     display: flex;
     gap: 1rem;
@@ -107,4 +95,38 @@
 .social-icons {
     display: flex;
     gap: 0.5rem;
+}
+
+@media (max-width:1300px) {
+    .card-logo-text img {
+        width: 30%;
+    }
+
+    .card-coin {
+        width: 10%;
+    }
+
+    .participate button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .project-card-cont {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width:870px) {
+    .project-container {
+        padding: 8rem 3rem 3rem;
+    }
+}
+
+@media (max-width:500px) {
+    .project-container {
+        padding: 8rem 1.5rem 3rem;
+    }
 }
